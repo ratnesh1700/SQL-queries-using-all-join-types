@@ -1,0 +1,8 @@
+Returns all records when there is a match in either left or right table. Non-matching rows are filled with NULL on the side that lacks data.
+
+Example:
+
+sql
+SELECT A.*, B.*
+FROM TableA A
+FULL OUTER JOIN TableB B ON A.id = B.a_id;
