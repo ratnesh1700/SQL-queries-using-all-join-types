@@ -1,0 +1,8 @@
+Returns all records from the left table and matched records from the right table. Non-matching rows in the right table are filled with NULL.
+
+Example:
+
+sql
+SELECT A.*, B.*
+FROM TableA A
+LEFT JOIN TableB B ON A.id = B.a_id;
