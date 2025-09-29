@@ -1,0 +1,8 @@
+Joins a table to itself, useful when hierarchical or recursive data exists.
+
+Example:
+
+sql
+SELECT A.ID, A.Name, B.Name AS ManagerName
+FROM Employees A
+LEFT JOIN Employees B ON A.ManagerID = B.ID;
