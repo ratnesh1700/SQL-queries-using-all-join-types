@@ -1,0 +1,8 @@
+Returns only the records that have matching values in both tables.
+
+Example:
+
+sql
+SELECT A.*, B.*
+FROM TableA A
+INNER JOIN TableB B ON A.id = B.a_id;
