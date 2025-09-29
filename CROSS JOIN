@@ -1,0 +1,8 @@
+Returns the Cartesian product of the two tables (each row in the first table is combined with every row in the second table).
+
+Example:
+
+sql
+SELECT A.*, B.*
+FROM TableA A
+CROSS JOIN TableB B;
